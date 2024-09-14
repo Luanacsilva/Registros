@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turmas</title>
+    <link rel="stylesheet" href="/Frontend/style.css">
+</head>
+<body>
+    <header>
+        <h1>Turmas</h1>
+        <button onclick="window.location.href='admin.html'">Painel Administrativo</button>
+    </header>
+    <section id="classes-section">
+        <h2>Lista de Turmas</h2>
+        <div id="classes-list"></div>
+        <button onclick="showAddClassForm()">Adicionar Turma</button>
+        <div id="add-class-form" style="display: none;">
+            <input type="text" id="class-name" placeholder="Nome da Turma" required>
+            <input type="number" id="class-year" placeholder="Ano" required>
+            <input type="number" id="class-semester" placeholder="Semestre" required>
+            <button onclick="addClass()">Salvar</button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

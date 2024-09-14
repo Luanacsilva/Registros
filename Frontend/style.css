@@ -1,0 +1,95 @@
+/* frontend/style.css */
+
+/* Importando a fonte "Cora Coralina" */
+@import url('https://fonts.googleapis.com/css2?family=Cora+Coralina&display=swap');
+
+body {
+  font-family: 'Cora Coralina', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Texto branco para contraste */
+}
+
+header {
+  background-color: #ff00ff; /* Magenta */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+section {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #1a1a1a; /* Preto mais suave para contraste */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5); /* Sombra magenta */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, button {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ff00ff; /* Borda magenta */
+  border-radius: 4px;
+  background-color: #333333; /* Fundo preto mais suave */
+  color: #ffffff; /* Texto branco */
+}
+
+button {
+  background-color: #ff00ff; /* Magenta */
+  color: #000000; /* Texto preto para contraste */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e600e6; /* Magenta escuro ao passar o mouse */
+}
+
+#data-display {
+  margin-top: 1rem;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  header {
+    padding: 0.5rem;
+  }
+
+  section {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  input, select, button {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    margin: 0.2rem;
+    padding: 0.2rem;
+  }
+
+  input, select, button {
+    font-size: 12px;
+    padding: 4px;
+  }
+}

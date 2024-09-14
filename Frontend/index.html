@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
+    
+    <!-- Referência ao CSS -->
+    <link rel="stylesheet" href="/Frontend/style.css">
+
+    <!-- Manifesto do PWA -->
+    <link rel="manifest" href="/Frontend/manifest.json">
+
+    <!-- Meta tags para PWA -->
+    <meta name="theme-color" content="#ff00ff">
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo ao Projeto Integrador</h1>
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="/Frontend/pages/profile.html">Perfil</a></li>
+            <li><a href="/Frontend/pages/admin.html">Administrador</a></li>
+            <li><a href="/Frontend/pages/classes.html">Salas</a></li>
+            <li><a href="/Frontend/pages/materias/index.html">Matérias</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulário de Login -->
+    <section id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+
+    <!-- Formulário de Registro -->
+    <section id="register-section">
+        <h2>Registro</h2>
+        <form id="register-form">
+            <input type="text" id="register-name" placeholder="Nome" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Senha" required>
+            <select id="register-role">
+                <option value="aluno">Aluno</option>
+                <option value="professor">Professor</option>
+                <option value="coordenador">Coordenador</option>
+            </select>
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+
+    <!-- Exibição de Dados -->
+    <section id="data-section">
+        <h2>Dados</h2>
+        <div id="data-display"></div>
+    </section>
+
+    <!-- Botão de Conexão USB -->
+    <section id="usb-section">
+        <h2>Conectar ao Dispositivo USB</h2>
+        <button id="connect-usb-button">Conectar ao dispositivo USB</button>
+    </section>
+
+    <!-- Referência aos Scripts JavaScript -->
+    <script src="/Frontend/app.js"></script>
+    <script src="/Frontend/service.worker.js"></script>
+</body>
+
+</html>
